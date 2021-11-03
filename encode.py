@@ -11,26 +11,24 @@ def encode(myString, numBefore, numAfter):
     Params: myString (a string to cipher), numBefore (number of random
     chars before each char in myString), numAfter (num of random chars 
     after each char in myString.)
+
+    Returns: A string encoded with random chars before and after each
+    char as per user input of the number of random chars before and after
+    each char in myString.
     """
     # Import the required libraries to complete the random char generation.
     import random
     import string
-    # We will store our random chars in before and after strings.
-    randomBefore = ''
-    randomAfter = ''
     # The final encoded string will be stored here.
     encoded = ''
-    # For each number of chars to randomly generate before the myString
-    # chars, concatenate these to the randomBefore string.
-    for char in range(numBefore):
-        randomBefore += random.choice(string.ascii_letters)
-    # Same as above, except for number of chars to randomly generate after
-    # myString chars.
-    for char in range(numAfter):
-        randomAfter += random.choice(string.ascii_letters)
     # Loop through each char in myString and concatenate with encoded each
     # char with the before and after random chars.
     for char in myString:
+        # For each iteration of each char, generate random chars dependant on the numBefore
+        # and numAfter range. The variables will be re-assigned on each iteration, generating
+        # completely random chars.
+        randomBefore = ''.join(random.choice(string.ascii_letters) for i in range(numBefore))
+        randomAfter = ''.join(random.choice(string.ascii_letters) for i in range(numAfter))
         encoded += randomBefore + char + randomAfter
     
     print(encoded)
