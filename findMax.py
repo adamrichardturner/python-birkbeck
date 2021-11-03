@@ -27,5 +27,6 @@ def findMax():
         # If num has a truthy value we append the float of that number to the nums list.
         elif num:
             nums.append(float(num))
+        
 
 findMax()
