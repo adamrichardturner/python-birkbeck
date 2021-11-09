@@ -6,12 +6,19 @@ def removeConsecutiveDup(nList):
 
     Returns: List with consecutive duplicates removed.
     """
+    # Seen keeps a list of duplicates
     seen = []
+    # Clean is our final list representation with duplicates removed
     clean = []
+    # For each item in nList..
     for i in nList:
+        # If the item has not been seen already...
         if i not in seen:
+            # Append the item to clean, our final list
             clean.append(i)
+            # Clear seen to remove previous entries
             seen.clear()
+            # Append the item to seen
             seen.append(i)
     # Return the duplicates removed here.
     return clean
