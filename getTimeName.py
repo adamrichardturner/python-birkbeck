@@ -44,4 +44,5 @@ print(getTimeName(12,1))     # "1 minute past 12"
 print(getTimeName(2,10))     # "10 minutes past 2"     
 print(getTimeName(12,45))    # "a quarter to 1"   
 print(getTimeName(3,59))     # "1 minute to 4"   
-print(getTimeName(12,40))    # "20 minutes to 1"  
+print(getTimeName(12,40))    # "20 minutes to 1"
+print(getTimeName(11, 7))  
