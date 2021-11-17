@@ -33,6 +33,6 @@ def encode(myString, numBefore, numAfter):
     
     print(encoded)
 
-encode("Help", 0, 0)
+#encode("Help", 0, 0)
 encode("Take the red", 2, 0)
-encode("Meet at midnight", 3, 2)
+#encode("Meet at midnight", 3, 2)
