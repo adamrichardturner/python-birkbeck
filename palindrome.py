@@ -24,4 +24,9 @@ def isPalindrome(content):
         # Else return False
         return False
 
-print(isPalindrome("Madam, I'm Adam."))
+print(isPalindrome(121)) # True
+print(isPalindrome("deed")) # True
+print(isPalindrome("Rotor")) # True
+print(isPalindrome("Madam, I'm Adam.")) # True
+print(isPalindrome("friend")) # False
+print(isPalindrome(1234))# False
