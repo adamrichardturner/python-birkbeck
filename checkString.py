@@ -31,9 +31,25 @@ def digitsOrUpper(string):
     return all(char.isupper() or char.isdigit() for char in string)
 
 def allSymbols(string):
+    """
+    Checks if a string is made up all symbols only..
+
+    Params: string(string)
+
+    Returns: True if all symbols, false if not.
+    """
     return all(not char.isalnum() for char in string)
 
 def isCapitalEndPeriod(string):
+    """
+    Checks whether a string starts with a capital and ends with 
+    a period.
+
+    Params: string(String)
+
+    Returns: True if string starts with capital and ends with .
+    False if otherwise.
+    """
     return string[0].isupper() and string[-1] == "."
 
 print(allUppercase("TEST")) # True
@@ -47,7 +63,6 @@ print(digitsOrUpper("asd")) # False
 
 print(allSymbols("*/#!")) # True
 print(allSymbols("asd*/#!")) # False
-
 
 print(isCapitalEndPeriod("Hello.")) # True
 print(isCapitalEndPeriod("hello.")) # False
