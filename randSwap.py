@@ -19,7 +19,7 @@ def randSwap(word):
         j = random.randint(i + 1, length - 1)
         # first stores the word up to not including i...
         first = word[:i]
-        # mid stores the word from 1 after 1 upto and not including j
+        # mid stores the word from 1 after i upto and not including j
         mid = word[i+1:j]
         # last stores the word from j+1 upto the end...
         last = word[j+1:]
