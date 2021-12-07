@@ -32,4 +32,4 @@ def numberTriangle(start, step, height):
         # Print a new line
         print()
 
-numberTriangle(4, 4, 6)
+numberTriangle(0, 2, 16)
