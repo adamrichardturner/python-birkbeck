@@ -33,4 +33,5 @@ LETTER_H = splitStars([1,0,0,0,1]) * 2 + stars(5) + splitStars([1,0,0,0,1]) * 2
 LETTER_E = stars(5) + stars(1) + stars(4) + stars(1) + stars(5)
 LETTER_L = stars(1) * 2 + stars(1) + stars(5)
 LETTER_O = splitStars([0,1,1,1,0]) + splitStars([1,0,0,0,1]) * 3 + splitStars([0,1,1,1,0])
-print(LETTER_H + LETTER_E + LETTER_L + LETTER_L + LETTER_O)
+
+print(LETTER_H + LETTER_E + LETTER_L + LETTER_L + LETTER_O, end="")
